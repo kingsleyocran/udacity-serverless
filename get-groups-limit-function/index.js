@@ -14,7 +14,7 @@ exports.handler = async (event) => {
   try {
     // Parse query parameters
     nextKey = parseNextKeyParameter(event)
-    limit = parseLimitParameter(event) || 20
+    limit = parseLimitParameter(event) || 5
   } catch (e) {
     console.log('Failed to parse query parameters: ', e.message)
     return {
@@ -48,11 +48,11 @@ exports.handler = async (event) => {
     headers: {
       'Access-Control-Allow-Origin': '*'
     },
-    body: JSON.stringify({
+    body: {
       items,
       // Encode the JSON object so a client can return it in a URL as is
       nextKey: encodeNextKey(result.LastEvaluatedKey)
-    })
+    }
   }
 }
 

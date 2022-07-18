@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "package": "zip -r get-groups-limit-function.zip .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
