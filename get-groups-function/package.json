@@ -1,0 +1,15 @@
+{
+  "name": "get-groups-function",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "package": "zip -r get-groups-function.zip .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1176.0"
+  }
+}
