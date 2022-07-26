@@ -1,3 +1,5 @@
+org: ocrankingsley
+console: true
 service: udagram-app
 frameworkVersion: "3"
 
